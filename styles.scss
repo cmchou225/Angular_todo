@@ -1,0 +1,14 @@
+$background-color: tomato;
+
+body{
+  background-color: $background-color;
+  
+  .done{
+    text-decoration: line-through;
+    color: #ccc
+  }
+}
+
+
+
+
