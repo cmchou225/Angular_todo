@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-module.exports = ($scope) => {
+angular.module('todoController',[]).controller('todoController', ['$scope', ($scope) => {
          $scope.todos = [
            {'title': 'Build a todo app', 'done': false}
          ];
@@ -8,9 +8,9 @@ module.exports = ($scope) => {
            $scope.todos.push({'title': $scope.newTodo, 'done': false });
            $scope.newTodo = '';
          }
-          $scope.clearCompleted = function(){
+         $scope.clearCompleted = function(){
            $scope.todos = $scope.todos.filter((todo) => {
              return !todo.done;
            })
          }
-       }
+       }]);
