@@ -1,4 +1,6 @@
 <div ng-controller="todoController">
+  <h2>Todo Component</h2> 
+  <div>Same data passed down from app component: {{todoTwo}} </div>
   <form name="frm" ng-submit="addTodo()">
     <input type="text" name="newTodo" ng-model="newTodo" required>
     <button  type="submit" ng-disabled="frm.$invalid">Add</button>
@@ -10,4 +12,5 @@
       <span ng-class="{'done': todo.done}" >{{ todo.title }}</span>
     </li>
   </ul>
+  <test></test>
 </div>

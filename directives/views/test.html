@@ -1,0 +1,7 @@
+  
+  <div ng-controller="todoTwoController"  >
+    <h2>Test Component</h2>
+    <div>Blur after typing to pass input to upper level components </div>
+    <input type="text" ng-blur="update()" name="todoTwo" ng-model="todoTwo" />
+    <span> {{todoTwo}} </span>
+  </div>
